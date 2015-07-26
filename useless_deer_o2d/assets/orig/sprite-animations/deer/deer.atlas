@@ -1,0 +1,97 @@
+
+deer.png
+size: 1024,1024
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+deer0001
+  rotate: false
+  xy: 2, 722
+  size: 213, 178
+  orig: 213, 178
+  offset: 0, 0
+  index: -1
+deer0002
+  rotate: false
+  xy: 2, 542
+  size: 213, 178
+  orig: 213, 178
+  offset: 0, 0
+  index: -1
+deer0003
+  rotate: false
+  xy: 217, 722
+  size: 213, 178
+  orig: 213, 178
+  offset: 0, 0
+  index: -1
+deer0004
+  rotate: false
+  xy: 2, 362
+  size: 213, 178
+  orig: 213, 178
+  offset: 0, 0
+  index: -1
+deer0005
+  rotate: false
+  xy: 217, 542
+  size: 213, 178
+  orig: 213, 178
+  offset: 0, 0
+  index: -1
+deer0006
+  rotate: false
+  xy: 432, 722
+  size: 213, 178
+  orig: 213, 178
+  offset: 0, 0
+  index: -1
+deer0007
+  rotate: false
+  xy: 2, 182
+  size: 213, 178
+  orig: 213, 178
+  offset: 0, 0
+  index: -1
+deer0008
+  rotate: false
+  xy: 217, 362
+  size: 213, 178
+  orig: 213, 178
+  offset: 0, 0
+  index: -1
+deer0009
+  rotate: false
+  xy: 432, 542
+  size: 213, 178
+  orig: 213, 178
+  offset: 0, 0
+  index: -1
+deer0010
+  rotate: false
+  xy: 647, 722
+  size: 213, 178
+  orig: 213, 178
+  offset: 0, 0
+  index: -1
+deer0011
+  rotate: false
+  xy: 2, 2
+  size: 213, 178
+  orig: 213, 178
+  offset: 0, 0
+  index: -1
+deer0012
+  rotate: false
+  xy: 217, 182
+  size: 213, 178
+  orig: 213, 178
+  offset: 0, 0
+  index: -1
+deer0013
+  rotate: false
+  xy: 432, 362
+  size: 213, 178
+  orig: 213, 178
+  offset: 0, 0
+  index: -1
