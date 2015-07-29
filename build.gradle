@@ -50,19 +50,10 @@ project(":core") {
         compile "com.badlogicgames.gdx:gdx-box2d:$gdxVersion"
         compile "com.badlogicgames.gdx:gdx-freetype:$gdxVersion"
         compile "com.badlogicgames.ashley:ashley:$ashleyVersion"
-        compile project(":overlap2d-runtime-libgdx")
+        compile "com.underwaterapps.overlap2druntime:overlap2d-runtime-libgdx:0.1.1-SNAPSHOT"
     }
 }
 
-project(":overlap2d-runtime-libgdx") {
-    apply plugin: "java"
-    sourceSets.main.java.srcDirs = ["src/"]
-
-    dependencies {
-        compile "com.badlogicgames.gdx:gdx:$gdxVersion"
-        compile fileTree(dir: 'libs', include: '*.jar')
-    }
-}
 
 tasks.eclipse.doLast {
     delete ".project"
