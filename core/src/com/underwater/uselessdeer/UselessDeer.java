@@ -4,12 +4,11 @@ import com.badlogic.gdx.ApplicationAdapter;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.OrthographicCamera;
-import com.badlogic.gdx.graphics.Texture;
-import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.utils.viewport.FitViewport;
 import com.badlogic.gdx.utils.viewport.Viewport;
+import com.uwsoft.editor.renderer.components.additional.ButtonComponent;
+import com.uwsoft.editor.renderer.systems.ButtonSystem;
 import com.uwsoft.editor.renderer.SceneLoader;
-import com.uwsoft.editor.renderer.components.label.LabelComponent;
 import com.uwsoft.editor.renderer.utils.ItemWrapper;
 
 public class UselessDeer extends ApplicationAdapter {
@@ -32,6 +31,24 @@ public class UselessDeer extends ApplicationAdapter {
         deer = new Deer();
         rootItem = new ItemWrapper(sl.getRoot());
         rootItem.getChild("deer").addScript(deer);
+
+        // all entities with button tag now have ButtonComponent
+        sl.addComponentsByTagName("button", ButtonComponent.class);
+
+        // retrieve particular button, and it's component, and add listener to it.
+        ButtonComponent buttonComponent = rootItem.getChild("background").getChild("movingBtn").getEntity().getComponent(ButtonComponent.class);
+        buttonComponent.addListener(new ButtonComponent.ButtonListener() {
+            public void touchUp() {
+
+            }
+            public void touchDown() {
+
+            }
+            public void clicked() {
+                // Do something
+            }
+        });
+
 
         // ui with actors and tables and shit
         uiStage = new UIStage(sl);
